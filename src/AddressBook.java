@@ -1,13 +1,24 @@
+import java.util.*;
+
 public class AddressBook {
-    int x;
+    Set<BuddyInfo> buddyInfo;
     public AddressBook(){
-        x = 1;
+        buddyInfo = new HashSet<>();
+    }
+
+    public void add(BuddyInfo buddy){
+        buddyInfo.add(buddy);
+    }
+
+    public void remove(BuddyInfo buddy){
+        buddyInfo.remove(buddy);
     }
 
     public static void main(String[] args){
         BuddyInfo obj = new BuddyInfo("Tom", "Sun St.", 1031213);
         AddressBook book = new AddressBook();
-        System.out.println("Address Book changed");
+        book.add(obj);
+        book.remove(obj);
 
     }
 }
