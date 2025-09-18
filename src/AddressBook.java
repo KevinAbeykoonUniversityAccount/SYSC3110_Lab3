@@ -1,7 +1,6 @@
 import java.util.*;
-
 public class AddressBook {
-    Set<BuddyInfo> buddyInfo;
+    private Set<BuddyInfo> buddyInfo;
     public AddressBook(){
         buddyInfo = new HashSet<>();
     }
@@ -19,6 +18,7 @@ public class AddressBook {
         AddressBook book = new AddressBook();
         book.add(obj);
         book.remove(obj);
+        System.out.println("Hello");
 
     }
 }
