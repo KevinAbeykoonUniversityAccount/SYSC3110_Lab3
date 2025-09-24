@@ -18,7 +18,7 @@ public class AddressBook {
         AddressBook book = new AddressBook();
         book.add(obj);
         book.remove(obj);
-        System.out.println("Hello, change ");
+        System.out.println("Hello, change 2");
 
     }
 }
